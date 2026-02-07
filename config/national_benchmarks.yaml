@@ -1,0 +1,61 @@
+national_benchmarks:
+  # Median durations in days by stage (based on national data)
+  stage_durations:
+    concept:
+      median: 60
+      p25: 30
+      p75: 90
+      p90: 120
+    pre_development:
+      median: 180
+      p25: 120
+      p75: 270
+      p90: 365
+    entitlement:
+      median: 240
+      p25: 150
+      p75: 365
+      p90: 540
+    financing:
+      median: 180
+      p25: 120
+      p75: 270
+      p90: 365
+    construction:
+      median: 540
+      p25: 365
+      p75: 720
+      p90: 900
+    lease_up:
+      median: 120
+      p25: 60
+      p75: 180
+      p90: 270
+
+  # Total concept-to-CO benchmarks
+  total_timeline:
+    median_days: 1320
+    median_months: 44
+    p25_days: 900
+    p75_days: 1800
+    p90_days: 2160
+
+  # Cost benchmarks (per unit)
+  costs:
+    national_median_per_unit: 350000
+    national_p25_per_unit: 250000
+    national_p75_per_unit: 475000
+    national_p90_per_unit: 600000
+
+  # Holding cost estimates
+  holding_costs:
+    daily_per_unit_during_entitlement: 15
+    daily_per_unit_during_financing: 20
+    daily_per_unit_during_construction: 35
+
+  # Health score thresholds
+  health_thresholds:
+    on_track: 80
+    at_risk: 60
+    delayed: 40
+    stalled: 0

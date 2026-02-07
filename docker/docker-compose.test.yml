@@ -1,0 +1,36 @@
+version: "3.9"
+
+services:
+  test:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    command: pytest tests/ -v --cov=src --cov-report=term-missing
+    environment:
+      DATABASE_URL: postgresql://housinghand:password@db:5432/housinghand_test
+      REDIS_URL: redis://redis:6379/0
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+  db:
+    image: postgis/postgis:14-3.4
+    environment:
+      POSTGRES_USER: housinghand
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: housinghand_test
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U housinghand"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  redis:
+    image: redis:7-alpine
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
