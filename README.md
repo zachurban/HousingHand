@@ -1,6 +1,6 @@
 # HousingHand
 
-Development Pipeline Intelligence Platform for the HousingMind ecosystem.
+Affordable Housing Development Pipeline Intelligence Platform for the HousingMind ecosystem.
 
 HousingHand tracks every affordable housing project from concept to certificate of occupancy, quantifying where development pipelines break down and connecting regulatory friction to real production outcomes. It creates the first comprehensive affordable housing development pipeline database, enabling stakeholders to predict timelines, identify bottlenecks, measure policy reform impact, and optimize portfolio performance.
 
