@@ -74,4 +74,5 @@ docs/            # Documentation
 
 ## License
 
-MIT
+©️ 2026 Zachary Urban 
+All Rights Reserved
