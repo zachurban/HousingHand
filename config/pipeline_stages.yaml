@@ -1,0 +1,67 @@
+pipeline_stages:
+  concept:
+    description: "Site identified, preliminary feasibility"
+    typical_duration_months: 2
+    exit_criteria: "Financial pro forma, initial architect sketches"
+    key_activities:
+      - site_selection
+      - initial_feasibility
+      - team_formation
+
+  pre_development:
+    description: "Due diligence, community engagement, design development"
+    typical_duration_months: 6
+    exit_criteria: "Schematic design, zoning analysis complete"
+    key_activities:
+      - environmental_review
+      - market_study
+      - preliminary_design
+      - community_engagement
+
+  entitlement:
+    description: "Zoning approvals, design review, land use permits"
+    typical_duration_months: 8
+    exit_criteria: "All land use approvals obtained"
+    key_activities:
+      - zoning_application
+      - design_review
+      - public_hearings
+      - variance_requests
+    friction_source: "HousingLens friction scores predict duration"
+
+  financing:
+    description: "Tax credit applications, loan underwriting, equity closing"
+    typical_duration_months: 6
+    exit_criteria: "Construction financing closed"
+    key_activities:
+      - LIHTC_application
+      - loan_application
+      - equity_syndication
+      - closing
+
+  construction:
+    description: "Groundbreaking to certificate of occupancy"
+    typical_duration_months: 18
+    exit_criteria: "CO received, units ready for occupancy"
+    key_activities:
+      - site_prep
+      - foundation
+      - framing
+      - systems
+      - finishes
+      - inspection
+
+  lease_up:
+    description: "Marketing and tenant placement"
+    typical_duration_months: 4
+    exit_criteria: "95% occupancy achieved"
+    key_activities:
+      - marketing
+      - applications
+      - screening
+      - move_ins
+
+  operations:
+    description: "Long-term affordability compliance"
+    typical_duration_months: 360
+    monitoring: "Annual compliance reporting"

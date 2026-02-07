@@ -1,0 +1,28 @@
+database:
+  development:
+    host: localhost
+    port: 5432
+    name: housinghand
+    user: housinghand
+    password: password
+    pool_size: 10
+    max_overflow: 20
+
+  test:
+    host: localhost
+    port: 5432
+    name: housinghand_test
+    user: housinghand
+    password: password
+    pool_size: 5
+    max_overflow: 10
+
+  production:
+    pool_size: 20
+    max_overflow: 40
+    pool_timeout: 30
+    pool_recycle: 3600
+
+  extensions:
+    - postgis
+    - timescaledb
